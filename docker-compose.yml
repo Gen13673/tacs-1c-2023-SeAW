@@ -1,0 +1,31 @@
+---
+version: "3"
+
+services:
+  backend:
+    image: backend:${TAG:-entrega1}
+    build: ./backend
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mongodb
+      - redis
+    environment:
+      - MONGODB_CONNECTION_STRING=mongodb://admin:password@mongodb:27017
+      - REDIS_CONNECTION_STRING=redis://redis:6379
+  frontend:
+    image: frontend:${TAG:-entrega1}
+    build: ./frontend
+    ports:
+      - "5173:5173"
+  mongodb:
+    image: mongo
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=password
+  redis:
+    image: redis
+    ports:
+      - "6379:6379"

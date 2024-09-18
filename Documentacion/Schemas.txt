@@ -1,0 +1,29 @@
+Event:
+    id: ID
+    name: String
+    desc: String
+    options: [{
+        id: ID
+        start: DateTime
+        end: DateTime
+        votes: [{
+            userId: ID->User
+            createdDate: DateTime
+        }]
+    }]
+    participants: [{
+        userId
+    }]
+    createdDate: DateTime
+    status: enum['Activo','Cerrado']
+    //lastVotedDate: DateTime
+    owner: ID->User
+
+User:
+    id: ID
+    name: String
+    lastname: String
+    email: String
+    password: String
+    createdDate: Datetime
+
