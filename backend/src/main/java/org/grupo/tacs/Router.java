@@ -71,6 +71,7 @@ public class Router {
         put("/v2/events/:id/participant", EventController::addParticipant);//anotarse
         delete("/v2/events/:id/participant", EventController::deleteParticipant);//desanotarse
 
+        /*
         get("/swagger.json", (request, response) -> {
             try {
                 response.status(200);
@@ -86,6 +87,7 @@ public class Router {
                 return "Error generating Swagger JSON";
             }
         });
+        */
 
         get("/swagger-auth.json", (request, response) -> {
             try {
