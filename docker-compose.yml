@@ -7,6 +7,7 @@ services:
     build: ./backend
     ports:
       - "8080:8080"
+      - "5005:5005"
     depends_on:
       - mongodb
       - redis

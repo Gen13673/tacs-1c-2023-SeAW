@@ -11,5 +11,6 @@ WORKDIR /app
 COPY --from=build /app/target/tacs-1c-2023-1.0-SNAPSHOT-jar-with-dependencies.jar .
 
 EXPOSE 8080
+EXPOSE 5005
 USER 1000
-CMD ["java", "-jar", "tacs-1c-2023-1.0-SNAPSHOT-jar-with-dependencies.jar"]
+CMD ["java", "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=0.0.0.0:5005", "-jar", "tacs-1c-2023-1.0-SNAPSHOT-jar-with-dependencies.jar"]
