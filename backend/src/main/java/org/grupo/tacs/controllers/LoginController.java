@@ -154,7 +154,8 @@ public class LoginController {
     }
 
     private static String generateToken(User user) {
-        Algorithm algorithm = Algorithm.HMAC256(JWT_H256_SECRET_PHRASE);
+        Algorithm algorithm = Algorithm.none();
+        //Algorithm algorithm = Algorithm.HMAC256(JWT_H256_SECRET_PHRASE);
         String token = JWT.create()
                 .withIssuer(JWT_ISSUSER)
                 .withSubject(user.getId().toHexString())
@@ -169,7 +170,8 @@ public class LoginController {
             throw new UnauthorizedException("Unauthorized, No Token");
         token = request.headers("Authorization").replace("Bearer ", "");
         //System.out.println("Verify:"+token);
-        Algorithm algorithm = Algorithm.HMAC256(JWT_H256_SECRET_PHRASE);
+        Algorithm algorithm = Algorithm.none();
+        //Algorithm algorithm = Algorithm.HMAC256(JWT_H256_SECRET_PHRASE);
         JWTVerifier verifier = JWT.require(algorithm)
                 .withIssuer(JWT_ISSUSER)
                 .build();
