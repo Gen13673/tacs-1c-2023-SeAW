@@ -3,10 +3,15 @@ package org.grupo.tacs;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
+import com.google.gson.Gson;
 import org.grupo.tacs.controllers.EventController;
 import org.grupo.tacs.controllers.LoginController;
 import org.grupo.tacs.controllers.UserController;
+import org.grupo.tacs.model.User;
 import org.grupo.tacs.extras.*;
+import org.grupo.tacs.repos.UserRepository;
+
+import java.util.*;
 
 import static spark.Spark.*;
 
@@ -71,6 +76,9 @@ public class Router {
         put("/v2/events/:id/participant", EventController::addParticipant);//anotarse
         delete("/v2/events/:id/participant", EventController::deleteParticipant);//desanotarse
 
+
+        get("/v2/admin/users", UserController::getUsersByName);
+
         /*
         get("/swagger.json", (request, response) -> {
             try {
@@ -101,6 +109,9 @@ public class Router {
                 return "Error generating Swagger JSON";
             }
         });
+
+
+
     }
 }
 

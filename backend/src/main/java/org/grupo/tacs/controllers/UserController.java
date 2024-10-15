@@ -10,8 +10,10 @@ import spark.Request;
 import spark.Response;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.NoSuchElementException;
+import java.util.stream.Collectors;
 
 import static org.grupo.tacs.controllers.LoginController.getVerifiedUserFromTokenInRequest;
 
@@ -114,6 +116,14 @@ public class UserController {
         return respuesta;
     }
 
+ 
+    public static Object getUsersByName(Request request, Response response) {
+        response.status(200);
+        Gson gson = new Gson();
+        String name = request.queryParams("name");
+        String respuesta = gson.toJson(UserRepository.instance.getUserData(name));
+        return respuesta;
+    }
 
      /** El método {@code getUsersOptions} envia un status 200 para OPTIONS porque CORS se le da que se tiene que fijar si
      * puede usar POST con un OPTIONS antes de hacer el fetch POST.

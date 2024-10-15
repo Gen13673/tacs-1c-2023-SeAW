@@ -4,7 +4,7 @@ import { EventsPage } from "../events";
 import { EventPage } from "../events/pages/EventPage";
 import { useAuthStore, useUiStore } from "../hooks";
 import { useEffect } from "react";
-import { MonitorPage } from "../events/pages/MonitorPage";
+import { MonitorPage, AdminUsers } from "../events/pages/MonitorPage";
 
 export const AppRouter = () => {
 
@@ -28,27 +28,25 @@ export const AppRouter = () => {
 	return (
 		<Routes>
             {
-                ( status === "not-authenticated")
-                ? (
+                (status === "not-authenticated") ? (
                     <>
-                        <Route path="/login" element={<LoginPage register={false}/>} />
+                        <Route path="/login" element={<LoginPage register={false} />} />
                         <Route path="/register" element={<LoginPage register />} />
                         <Route path="/swagger-auth.json" element={<Navigate to={"/swagger-auth.json"} />} />
-                        <Route path="/*" element={<Navigate to={"/login"} />} />    
+                        <Route path="/*" element={<Navigate to={"/login"} />} />
                     </>
-                )
-                : (
+                ) : (
                     <>
-                        <Route path="/event/:id" element={ <EventPage /> } />
-                        <Route path="/" element={ <EventsPage /> } />
-                        {
-                            user.isAdmin &&
-                            <Route path="/monitor" element={ <MonitorPage /> } />
-                        }
+                        <Route path="/event/:id" element={<EventPage />} />
+                        <Route path="/" element={<EventsPage />} />
+                        {user.isAdmin && (
+                            <><Route path="/monitor" element={<MonitorPage />} />
+                            <Route path="/admin/users" element={<AdminUsers />} /></>
+                        )}
                         <Route path="/*" element={<Navigate to={"/"} />} />
                     </>
                 )
             }
 		</Routes>
 	);
-};
+}
