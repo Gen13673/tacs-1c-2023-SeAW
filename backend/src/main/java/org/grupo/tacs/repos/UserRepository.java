@@ -89,7 +89,8 @@ public class UserRepository implements Repository<User> {
             if (existingUser != null) {
                 throw new ThisEmailIsAlreadyInUseException(user.getEmail());
             } else if (user.passwordIguales()) {
-                user.setPassword(Helper.obtenerHash(user.getPassword()));
+                user.setPassword(Helper.obtenerHashConSalt(user.getPassword(),user.getLastName()));
+                //user.setPassword(Helper.obtenerHash(user.getPassword()));
                 user.setConfirmPassword(user.getPassword());
                 user.setCreatedDate(LocalDateTime.now());
                 collection.insertOne(user);

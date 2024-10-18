@@ -94,6 +94,11 @@ public class UserController {
             response.status(409);//Las contraseñas no coinciden
             myMap.put("msg","Las contraseñas no coinciden");
             return gson.toJson(myMap);
+        }catch(IllegalArgumentException e){
+            e.printStackTrace();
+            response.status(409);//Las contraseñas no coinciden
+            myMap.put("msg",e.getMessage());
+            return gson.toJson(myMap);
         }catch(Exception e){
             response.status(500);
             myMap.put("msg","Usuario no encontrado");

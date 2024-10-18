@@ -133,7 +133,12 @@ public class LoginController {
             User user = users.stream().filter(u -> u.getEmail().equals(email)).findFirst().orElseThrow(UserDoesNotExistException::new);
             token = generateToken(user);
             response.header("Authorization", "Bearer " + token);
+            /*
             if (!user.getPassword().equals(Helper.obtenerHash(password))) {
+                throw new WrongPasswordException();
+            }
+            */
+            if (!user.getPassword().equals(Helper.obtenerHashConSalt(password,user.getLastName()))) {
                 throw new WrongPasswordException();
             }
             myMap.put("user",user);
