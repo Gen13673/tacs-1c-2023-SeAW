@@ -121,6 +121,11 @@ public class UserController {
         return respuesta;
     }
 
+    public static Object getAdminUsersOptions(Request request, Response response) {
+        String allowedMethods = "OPTIONS, GET, POST, PUT, DELETE";
+        return buildResponse(response, allowedMethods);
+    }
+
  
     public static Object getUsersByName(Request request, Response response) {
         response.status(200);

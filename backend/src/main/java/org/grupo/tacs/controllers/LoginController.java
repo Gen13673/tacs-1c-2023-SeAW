@@ -138,7 +138,7 @@ public class LoginController {
                 throw new WrongPasswordException();
             }
             */
-            if (!user.getPassword().equals(Helper.obtenerHashConSalt(password,user.getLastName()))) {
+            if (!user.getPassword().equals(Helper.obtenerHashConSalt(password,UserRepository.instance.concat(user)))) {
                 throw new WrongPasswordException();
             }
             myMap.put("user",user);

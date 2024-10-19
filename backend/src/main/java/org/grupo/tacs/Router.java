@@ -76,7 +76,7 @@ public class Router {
         put("/v2/events/:id/participant", EventController::addParticipant);//anotarse
         delete("/v2/events/:id/participant", EventController::deleteParticipant);//desanotarse
 
-
+        options("/v2/admin/users", UserController::getAdminUsersOptions);
         get("/v2/admin/users", UserController::getUsersByName);
 
         /*

@@ -77,6 +77,14 @@ public class UserRepository implements Repository<User> {
         }
     }
 
+    public String concat(User user){
+        if (user.getEmail()==null || user.getLastName()==null){
+            return null;
+        }else{
+            return user.getEmail()+user.getLastName();
+        }
+    }
+
     @Override
     public void save(User user) {
         mongoClient = MongoClientSingleton.getInstance();
@@ -89,7 +97,7 @@ public class UserRepository implements Repository<User> {
             if (existingUser != null) {
                 throw new ThisEmailIsAlreadyInUseException(user.getEmail());
             } else if (user.passwordIguales()) {
-                user.setPassword(Helper.obtenerHashConSalt(user.getPassword(),user.getLastName()));
+                user.setPassword(Helper.obtenerHashConSalt(user.getPassword(),concat(user)));
                 //user.setPassword(Helper.obtenerHash(user.getPassword()));
                 user.setConfirmPassword(user.getPassword());
                 user.setCreatedDate(LocalDateTime.now());

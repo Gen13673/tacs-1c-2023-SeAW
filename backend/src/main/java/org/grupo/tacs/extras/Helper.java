@@ -8,7 +8,7 @@ public class Helper {
     //private static final int ITERATIONS = 100000;
 
     public static String generarSalt(String salt) {
-        if (salt == null || salt.isEmpty()) {
+        if (salt == null) {
             throw new IllegalArgumentException("Error encoding salt in Base64. Salt cannot be null or empty.");
         }
         // Codificar el salt en Base64
