@@ -1,0 +1,118 @@
+[{
+  "_id": {
+    "$oid": "671d05b74a584341a8e62eea"
+  },
+  "confirmPassword": "3b317c2d32ca936c1adc86c0f34e4156e1ed9490",
+  "createdDate": {
+    "$date": "2024-10-26T15:07:35.240Z"
+  },
+  "email": "lucas.sanchez@hotmail.com",
+  "lastName": "Sanchez",
+  "name": "Lucas",
+  "password": "3b317c2d32ca936c1adc86c0f34e4156e1ed9490"
+},
+{
+  "_id": {
+    "$oid": "671d05cc4a584341a8e62eeb"
+  },
+  "confirmPassword": "85d07cbb7fd465725e0d62f028ba94425f5a6748",
+  "createdDate": {
+    "$date": "2024-10-26T15:07:56.350Z"
+  },
+  "email": "aadaniel@gmail.com",
+  "lastName": "Arenas",
+  "name": "Alan",
+  "password": "85d07cbb7fd465725e0d62f028ba94425f5a6748"
+},
+{
+  "_id": {
+    "$oid": "671d05e04a584341a8e62eec"
+  },
+  "confirmPassword": "81a7f54c415db60163520372093530fbee869b99",
+  "createdDate": {
+    "$date": "2024-10-26T15:08:16.262Z"
+  },
+  "email": "tomas-a01@gmail.com",
+  "lastName": "Anderson",
+  "name": "Tomas",
+  "password": "81a7f54c415db60163520372093530fbee869b99"
+},
+{
+  "_id": {
+    "$oid": "671d05ff4a584341a8e62eed"
+  },
+  "confirmPassword": "f46d27da21dd63e0a2ee53c8c6a66ffa1d3c3c89",
+  "createdDate": {
+    "$date": "2024-10-26T15:08:47.777Z"
+  },
+  "email": "1n4f2u8@yahoo.com",
+  "lastName": "Lopez",
+  "name": "Elisa",
+  "password": "f46d27da21dd63e0a2ee53c8c6a66ffa1d3c3c89"
+},
+{
+  "_id": {
+    "$oid": "671d06164a584341a8e62eee"
+  },
+  "confirmPassword": "7fcc04b5a885342b07fad0ff05e10531ae38e997",
+  "createdDate": {
+    "$date": "2024-10-26T15:09:10.524Z"
+  },
+  "email": "del@encuentro.com.ar",
+  "lastName": "Bor",
+  "name": "Elsa",
+  "password": "7fcc04b5a885342b07fad0ff05e10531ae38e997"
+},
+{
+  "_id": {
+    "$oid": "671d06344a584341a8e62eef"
+  },
+  "confirmPassword": "a40d455e4271e8db286ef18b676ff3695d623752",
+  "createdDate": {
+    "$date": "2024-10-26T15:09:40.502Z"
+  },
+  "email": "joaquin@frba.utn.edu.ar",
+  "lastName": "Rodriguez",
+  "name": "Joaquin",
+  "password": "a40d455e4271e8db286ef18b676ff3695d623752",
+  "isAdmin": true
+},
+{
+  "_id": {
+    "$oid": "671d06914a584341a8e62ef0"
+  },
+  "confirmPassword": "15c306802b68c4444b97543cc2a8cd153cbc2554",
+  "createdDate": {
+    "$date": "2024-10-26T15:11:13.518Z"
+  },
+  "email": "mika.walters@aol.com",
+  "lastName": "Galan",
+  "name": "Micaela",
+  "password": "15c306802b68c4444b97543cc2a8cd153cbc2554"
+},
+{
+  "_id": {
+    "$oid": "671d06a94a584341a8e62ef1"
+  },
+  "confirmPassword": "a76cf0e161e8875311f396ed359c5950b79ba496",
+  "createdDate": {
+    "$date": "2024-10-26T15:11:37.518Z"
+  },
+  "email": "juan_li00@googlemail.com",
+  "lastName": "Herrera",
+  "name": "Juan",
+  "password": "a76cf0e161e8875311f396ed359c5950b79ba496"
+},
+{
+  "_id": {
+    "$oid": "671d06c34a584341a8e62ef2"
+  },
+  "confirmPassword": "ed1a4e97e2e3d6876df600cf5c5a206a1e4bf8df",
+  "createdDate": {
+    "$date": "2024-10-26T15:12:03.210Z"
+  },
+  "email": "aleXpena@google.com",
+  "lastName": "Peña",
+  "name": "Alejandro",
+  "password": "ed1a4e97e2e3d6876df600cf5c5a206a1e4bf8df"
+}]
