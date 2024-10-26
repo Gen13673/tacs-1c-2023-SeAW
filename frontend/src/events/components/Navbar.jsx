@@ -24,8 +24,14 @@ export const Navbar = () => {
                             user.isAdmin &&
                             <li className="nav-item">
                                 <Link className="nav-link" to={'/monitor'}>Monitor</Link>
-                            </li>                    
-                        }                   
+                            </li>               
+                        }
+                        {
+                            user.isAdmin &&
+                            <li className="nav-item">
+                                <Link className="nav-link" to={'/admin/users'}>Search Users</Link>
+                            </li>
+                        }              
                     </ul>
                     <button
                         className='btn btn-danger'

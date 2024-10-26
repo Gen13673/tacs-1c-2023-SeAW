@@ -100,21 +100,25 @@ export const AdminUsers = () => {
     }
 
     return (
-        <div className="container">
-            <h1>Admin Users</h1>
-            <div className="input-group mb-3">
-                <input type="text" value={searchText} onChange={handleSearchTextChange} className="form-control" placeholder="Search for users" />
-                <button className="btn btn-primary" type="button" onClick={handleSearchClick}>Search</button>
-            </div>
-            <ul className="list-group mt-3">
-                {users.map(user => (
-                    <ul className="list-group">
-                        {Object.keys(user).map(key => (
-                            <li key={key + user[key]} className="list-group-item">{key}: {user[key]}</li>
-                        ))}
-                    </ul>
-                ))}
-            </ul>
-        </div>
+        <>
+            <Navbar />
+                <div style={{ marginTop: '80px' }} className="container">
+                <h1>Admin Users</h1>
+                <div className="input-group mb-3">
+                    <input type="text" value={searchText} onChange={handleSearchTextChange} className="form-control" placeholder="Search for users" />
+                    <button className="btn btn-primary" type="button" onClick={handleSearchClick}>Search</button>
+                </div>
+                <ul className="list-group mt-3">
+                    {users.map(user => (
+                        <ul className="list-group">
+                            {Object.keys(user).map(key => (
+                                <li key={key + user[key]} className="list-group-item">{key}: {user[key]}</li>
+                            ))}
+                        </ul>
+                    ))}
+                </ul>
+                </div>
+            <Footer />
+        </>
     );
 };
