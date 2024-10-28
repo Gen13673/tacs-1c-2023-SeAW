@@ -6,12 +6,23 @@
   <component name="ChangeListManager">
     <list default="true" id="3e8a0b3a-6909-4781-9a29-07d51606ca37" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/grupo/tacs/Router.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/grupo/tacs/Router.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/grupo/tacs/controllers/EventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/grupo/tacs/controllers/EventController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/grupo/tacs/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/grupo/tacs/controllers/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/grupo/tacs/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/grupo/tacs/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/grupo/tacs/model/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/grupo/tacs/model/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/grupo/tacs/repos/EventRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/grupo/tacs/repos/EventRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/grupo/tacs/repos/InteractionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/grupo/tacs/repos/InteractionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/grupo/tacs/repos/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/grupo/tacs/repos/Repository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/grupo/tacs/repos/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/grupo/tacs/repos/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/test/java/org/grupo/tacs/RateLimiterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/test/java/org/grupo/tacs/RateLimiterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/events/pages/MonitorPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/events/pages/MonitorPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/router/AppRouter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/router/AppRouter.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/test/java/org/grupo/tacs/EventTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/test/java/org/grupo/tacs/EventTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/events/components/CreateEvent/CreateEventForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/events/components/CreateEvent/CreateEventForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/events/components/CreateEvent/CreateEventModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/events/components/CreateEvent/CreateEventModal.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/events/pages/EventsPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/events/pages/EventsPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/hooks/useEventsStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/hooks/useEventsStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/hooks/useUiStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/hooks/useUiStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/ui/uiSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/ui/uiSlice.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,25 +56,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/lauta/Desktop/Facultad/Seguridad en Aplicaciones Web/tacs-1c-2023-SeAW/backend",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/lauta/Desktop/Facultad/Seguridad en Aplicaciones Web/tacs-1c-2023-SeAW/backend&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="tacs-1c-2023" />
@@ -96,6 +107,9 @@
       <workItem from="1728782531953" duration="1469000" />
       <workItem from="1728870273590" duration="255000" />
       <workItem from="1728871816979" duration="11000" />
+      <workItem from="1729292124874" duration="662000" />
+      <workItem from="1729524257467" duration="8000" />
+      <workItem from="1730060662521" duration="1996000" />
     </task>
     <servers />
   </component>

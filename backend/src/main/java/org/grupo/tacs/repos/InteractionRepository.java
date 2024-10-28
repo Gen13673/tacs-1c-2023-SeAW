@@ -22,7 +22,7 @@ public class InteractionRepository implements Repository<Interaction>{
     }
 
     @Override
-    public List<Interaction> findAll() {
+    public List<Interaction> findAllNormalEvents() {
         mongoClient = MongoClientSingleton.getInstance();
         try {
             MongoDatabase mongodb = mongoClient.getDatabase(DB_NAME);

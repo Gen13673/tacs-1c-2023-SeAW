@@ -66,7 +66,7 @@ public class UserRepository implements Repository<User> {
 
 
     @Override
-    public List<User> findAll() {
+    public List<User> findAllNormalEvents() {
         mongoClient = MongoClientSingleton.getInstance();
         try {
             MongoDatabase mongodb = mongoClient.getDatabase("mydb");

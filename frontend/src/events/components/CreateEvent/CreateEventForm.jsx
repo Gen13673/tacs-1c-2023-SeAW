@@ -6,13 +6,14 @@ import { CreateEventError } from "./CreateEventError";
 
 const MAX_OPTIONS_LENGTH = 5;
 
-export const CreateEventForm = () => {
+export const CreateEventForm = ({isAdmin}) => {
 
     const [ formValues, setFormValues] = useState({
         name: '',
         desc: '',
         options: [],
-        participants: []
+        participants: [],
+        isCommunity: false
     });
 
     const [state, setState] = useState({
@@ -134,6 +135,13 @@ export const CreateEventForm = () => {
                     name="desc"
                 />
             </div>
+
+            {isAdmin && <div className="mb-3">
+                <label htmlFor="eventdesc" className="form-label">Evento comunitario</label>
+                <button onClick={(e) => setFormValues({...formValues, isCommunity: true})}> {formValues.isCommunity ? 'Si' : 'No'} </button>
+            </div>}
+
+
 
             <CreateEventOptionsForm options = { options } handleAddOption={ handleAddOption } handleRemoveOption={ handleRemoveOption }/>
 

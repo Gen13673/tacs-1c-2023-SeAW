@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux"
-import { onCloseCreateEventModal, onOpenCreateEventModal } from "../store";
+import { onCloseCreateEventModal, onOpenCreateEventModal} from "../store";
 
 export const useUiStore = () => {
 
@@ -8,6 +8,7 @@ export const useUiStore = () => {
     const { 
         isLoadingUI,
         isCreateEventModalOpen,
+        isCommunityEvent
     } = useSelector( state => state.ui );
 
     const openCreateEventModal = () => {
@@ -18,10 +19,11 @@ export const useUiStore = () => {
         dispatch( onCloseCreateEventModal() );
     }
 
+
+
     return {
         isLoadingUI,
         isCreateEventModalOpen,
-
         openCreateEventModal,
         closeCreateEventModal,
     }

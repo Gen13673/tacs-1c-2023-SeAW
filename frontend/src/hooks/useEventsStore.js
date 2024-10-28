@@ -13,7 +13,7 @@ export const useEventsStore = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
-    const { currentEvent, myEvents, participantEvents } = useSelector( state => state.events );
+    const { currentEvent, myEvents, participantEvents, communityEvents } = useSelector( state => state.events );
     const { user } = useSelector( state => state.auth );
 
     const isOwner = useMemo(() => {
@@ -31,6 +31,7 @@ export const useEventsStore = () => {
     const startCreatingEvent = async( newEvent ) => {
 
         const eventToCreate = { ...newEvent };
+
 
         eventToCreate.options = newEvent.options.map( option => {
             return {
@@ -95,10 +96,13 @@ export const useEventsStore = () => {
         try {
             const { status, data } = await api.get(`/events?userId=${ user._id }`);
 
+            console.log(data)
+
             if( status === 200 ){
                 dispatch(onSetEvents( {
                     myEvents: data.myEvents,
-                    participantEvents: data.participants
+                    participantEvents: data.participants,
+                    communityEvents: data.communityEvents
                 } ));
             }else{
                 console.error(data.msg);
@@ -214,6 +218,7 @@ export const useEventsStore = () => {
         isOwner,
         isParticipating,
         isActive,
+        communityEvents,
 
         startCreatingEvent,
         startAddingVote,

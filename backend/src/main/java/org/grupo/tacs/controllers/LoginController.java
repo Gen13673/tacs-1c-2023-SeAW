@@ -61,7 +61,7 @@ public class LoginController {
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     public static Object login(Request request, Response response) {
-        List<User> usuarios = UserRepository.instance.findAll();
+        List<User> usuarios = UserRepository.instance.findAllNormalEvents();
         Map<String, ObjectId> myMap = new HashMap<String, ObjectId>();
         Gson gson = new Gson();
         try{
@@ -121,7 +121,7 @@ public class LoginController {
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     public static Object loginJWT(Request request, Response response) {
-        List<User> users = UserRepository.instance.findAll();
+        List<User> users = UserRepository.instance.findAllNormalEvents();
         Map<Object, Object> myMap = new HashMap<Object, Object>();
         Gson gson = getGsonForUser();
 

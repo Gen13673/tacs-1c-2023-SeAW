@@ -117,7 +117,7 @@ public class UserController {
         Map<String,Object> parametros = new HashMap<>();
         response.status(200);
         Gson gson = new Gson();
-        String respuesta = gson.toJson(UserRepository.instance.findAll());
+        String respuesta = gson.toJson(UserRepository.instance.findAllNormalEvents());
         return respuesta;
     }
 

@@ -48,12 +48,17 @@ public class EventRepository implements Repository<Event>{
     }
 
     @Override
-    public List<Event> findAll() {
-        /*MongoCollection<Event> collection = mongodb().getCollection("Events", Event.class);
-        return collection.find().into(new ArrayList<>());*/
-
-        return events;
+    public List<Event> findAllNormalEvents() {
+        try {
+            MongoDatabase mongodb = mongoClient.getDatabase(DB_NAME);
+            MongoCollection<Event> collection = mongodb.getCollection(EVENT_COLLECTION_NAME, Event.class);
+            FindIterable<Event> events = collection.find();
+            return events.into(new ArrayList<>());
+        }  finally {
+            //mongoClient.close(); //cerras el cliente
+        }
     }
+
 
     @Override
     public void save(Event event) {
@@ -369,15 +374,21 @@ public class EventRepository implements Repository<Event>{
         try {
             List<Document> myEvents = new ArrayList<>();
             List<Document> participantEvents = new ArrayList<>();
+            List<Document> communityEvents = new ArrayList<>();
+        
             MongoDatabase mongodb = mongoClient.getDatabase(DB_NAME);
             MongoCursor<Document> cursor = mongodb.getCollection(EVENT_COLLECTION_NAME).find(
                     Filters.or(
                             Filters.eq("createdBy", userId),
-                            Filters.elemMatch("participants", Filters.eq("_id", userId))
+                            Filters.elemMatch("participants", Filters.eq("_id", userId)),
+                            Filters.eq("isCommunity", true)
                     )
             ).iterator();
 
+
+
             try {
+
                 while (cursor.hasNext()) {
                     Document event = cursor.next();
                     ObjectId createdByUserId = (ObjectId) event.get("createdBy");
@@ -405,13 +416,22 @@ public class EventRepository implements Repository<Event>{
                                 .append("status", event.getBoolean("isActive") ? "Activo" : "Cerrado")
                                 .append("totalParticipants", participants.size()));
                     }
-                }
+                    if ( event.containsKey("isCommunity") && event.getBoolean("isCommunity")) {
+                        communityEvents.add(new Document()
+                                .append("id", event.getObjectId("_id").toString())
+                                .append("name", event.getString("name"))
+                                .append("description", event.getString("desc"))
+                                .append("status", event.getBoolean("isActive") ? "Activo" : "Cerrado")
+                                .append("totalParticipants", participants.size()));
+                    }
+                }   
             } finally {
                 cursor.close();
             }
             result = new Document();
             result.append("myEvents", myEvents);
             result.append("participants", participantEvents);
+            result.append("communityEvents", communityEvents);
         } catch (MongoException e) {
             e.printStackTrace();
         } finally {

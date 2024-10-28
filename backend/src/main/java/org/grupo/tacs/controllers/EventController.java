@@ -341,21 +341,21 @@ public class EventController {
         return getResponse(response, allowedMethods);
     }
 
-    public static Object getEvents(Request request, Response response) {
+    public static Object getNormalEvents(Request request, Response response) {
         try{
             request.queryParams("user");
-            Map<String,Object> param = new HashMap<>();
             response.status(200);
             Gson gson = new Gson();
-            String events = gson.toJson( EventRepository.instance.findAll());
+            String events = gson.toJson( EventRepository.instance.findAllNormalEvents());
             return gson.toJson(events);
         }catch (Exception e) {
             response.status(500);
             System.out.println(e);
             return "";
         }
-
     }
+
+
 
     private static Response getResponse(Response response, String allowedMethods) {
         response.status(200);

@@ -17,6 +17,8 @@ public class Event {
     String desc;
     @BsonProperty(value = "isActive")
     Boolean isActive;
+    @BsonProperty(value= "isCommunity")
+    Boolean isCommunity;
     @BsonProperty(value = "createdDate")
     LocalDateTime createdDate;
     @BsonProperty(value = "createdBy")
@@ -32,7 +34,7 @@ public class Event {
      * @param createdBy Es el usuario creador del evento.
 
      */
-    public Event(String name, String desc, List<EventOption> options, ObjectId createdBy, List<User> participants) {
+    public Event(String name, String desc, List<EventOption> options, ObjectId createdBy, List<User> participants, Boolean isCommunity) {
         this.name = name;
         this.desc = desc;
         this.isActive = true;
@@ -40,6 +42,7 @@ public class Event {
         this.createdDate = LocalDateTime.now();
         this.createdBy = createdBy;
         this.participants = participants;
+        this.isCommunity = isCommunity;
     }
 
     public Event() {
@@ -57,6 +60,8 @@ public class Event {
     public LocalDateTime getCreatedDate() {return createdDate;}
 
     public ObjectId getCreatedBy() {return createdBy;}
+
+    public Boolean getIsCommunity() {return isCommunity;}
 
     public List<EventOption> getOptions() {return options;}
     public List<User> getParticipants() {return participants;}
@@ -77,6 +82,8 @@ public class Event {
     public void setCreatedBy(ObjectId createdBy) {this.createdBy = createdBy;}
 
     public void setOptions(List<EventOption> options) {this.options = options;}
+
+    public void setIsCommunity(Boolean isCommunity) {this.isCommunity = isCommunity;}
 
     public void addOption(EventOption option) {
         if(this.options==null)

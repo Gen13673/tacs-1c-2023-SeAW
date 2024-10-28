@@ -9,7 +9,7 @@ export const EventsPage = () => {
 
     const { openCreateEventModal } = useUiStore();
     const { user } = useAuthStore();
-    const { myEvents, participantEvents, startGettingEvents } = useEventsStore();
+    const { myEvents, participantEvents, communityEvents, startGettingEvents } = useEventsStore();
 
     useEffect(() => {
         startGettingEvents();
@@ -50,16 +50,22 @@ export const EventsPage = () => {
                     </div>
                     <div className="col-12 col-lg-6">
                         <div className="border rounded mb-3 bg-white shadow-sm p-3 animate__animated animate__fadeIn">
+                            <h3>Eventos Comunitarios:</h3>
+                            <EventsList events={ communityEvents }/>
+                        </div>
+                    <div className="col-12 col-lg-6">
+                        <div className="border rounded mb-3 bg-white shadow-sm p-3 animate__animated animate__fadeIn">
                             <h3>Participando en:</h3>
                             <EventsList events={ participantEvents }/>
                         </div>
+                    </div>
                     </div>
                 </div>
             </main>
 
             <Footer />
 
-            <CreateEventModal />
+            <CreateEventModal isAdmin={ user.isAdmin }/>
         </>
     )
 }

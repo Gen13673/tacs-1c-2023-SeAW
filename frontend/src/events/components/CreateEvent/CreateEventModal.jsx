@@ -14,7 +14,7 @@ const customStyles = {
 };
 Modal.setAppElement("#root");
 
-export const CreateEventModal = () => {
+export const CreateEventModal = ({isAdmin}) => {
 
     const { isCreateEventModalOpen, closeCreateEventModal } = useUiStore();
 
@@ -24,12 +24,12 @@ export const CreateEventModal = () => {
                 onRequestClose={closeCreateEventModal}
                 style={customStyles}
                 className="modal"
-                overlayClassName="modal-fondo"
+                overlayClassName="modal-fondo" 
                 closeTimeoutMS={200}
             >
                 <h1>Nuevo evento</h1>
                 <hr />
-                <CreateEventForm />
+                <CreateEventForm isAdmin={isAdmin}/>
             </Modal>
     );
 }

@@ -5,7 +5,8 @@ export const eventsSlice = createSlice({
     initialState: {
         currentEvent: {},
         myEvents: [],
-        participantEvents: []
+        participantEvents: [],
+        communityEvents: [],
     },
     reducers: {
         onSetCurrentEvent: (state, { payload } ) => {
@@ -17,6 +18,7 @@ export const eventsSlice = createSlice({
         onSetEvents: (state, { payload }) => {
             state.myEvents = payload.myEvents;
             state.participantEvents = payload.participantEvents;
+            state.communityEvents = payload.communityEvents;
         },
         onRemoveEvents: (state) => {
             state.myEvents = [];

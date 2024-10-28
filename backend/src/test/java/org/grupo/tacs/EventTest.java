@@ -21,7 +21,7 @@ public class EventTest {
         this.user.setName("Bob");
         this.user.setPassword("Password123");
         this.user.setConfirmPassword("Password123");
-        this.eventOpen = new Event("OpenEvent", "An Open Event", new ArrayList<>(), this.user.getId(), new ArrayList<>());
+        this.eventOpen = new Event("OpenEvent", "An Open Event", new ArrayList<>(), this.user.getId(), new ArrayList<>(), false);
         this.optionOne = new EventOption(LocalDateTime.now(), LocalDateTime.now().plusHours(2), new ArrayList<>());
         this.eventOpen.addOption(optionOne);
         this.optionTwo = new EventOption(LocalDateTime.now().plusDays(1), LocalDateTime.now().plusHours(2).plusDays(1), new ArrayList<>());

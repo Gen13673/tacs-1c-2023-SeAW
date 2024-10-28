@@ -59,7 +59,9 @@ public class Router {
         get("/v2/users/:id", UserController::getUser);//traer user y eventos(nombre, desc y id) en los que participa (solo si es el user logueado), eventos(nombre, desc, status, totalParticipants y id) en los que participa (solo si es el user logueado)
 
         options("/v2/events",EventController::getEventsOptions);
+        
         post("/v2/events",EventController::createEventJWT);
+        
         get("/v2/events",EventController::getEventsByUser); // get /v2/events?userId=
         get("/v2/events/:id", EventController::getEvent); // trae un evento en especifico, con todas sus opciones  y votos
 

@@ -18,12 +18,11 @@ export const uiSlice = createSlice({
 		},
 		onCloseCreateEventModal: (state) => {
 			state.isCreateEventModalOpen = false;
-		},
-
+		}
 	},
 });
 
-// Action creators are generated for each case reducer function
+
 export const { 
     onStartLoading,
     onStopLoading,
