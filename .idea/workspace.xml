@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e8a0b3a-6909-4781-9a29-07d51606ca37" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/auth/pages/swagger.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/grupo/tacs/Router.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/grupo/tacs/Router.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/router/AppRouter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/router/AppRouter.jsx" afterDir="false" />
-    </list>
+    <list default="true" id="3e8a0b3a-6909-4781-9a29-07d51606ca37" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,7 +92,7 @@
       <workItem from="1729524257467" duration="8000" />
       <workItem from="1730060662521" duration="1996000" />
       <workItem from="1730210414785" duration="457000" />
-      <workItem from="1730574008845" duration="6177000" />
+      <workItem from="1730574008845" duration="6373000" />
     </task>
     <servers />
   </component>
