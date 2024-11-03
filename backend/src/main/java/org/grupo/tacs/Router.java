@@ -99,7 +99,8 @@ public class Router {
         });
         */
 
-        get("/swagger-auth.json", (request, response) -> {
+        options("/v2/swagger-auth.json", EventController::getEventOptions);
+        get("/v2/swagger-auth.json", (request, response) -> {
             try {
                 response.status(200);
                 response.type("application/json");
@@ -111,6 +112,7 @@ public class Router {
                 return "Error generating Swagger JSON";
             }
         });
+
 
 
 

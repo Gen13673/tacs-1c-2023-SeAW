@@ -5,6 +5,9 @@ import { EventPage } from "../events/pages/EventPage";
 import { useAuthStore, useUiStore } from "../hooks";
 import { useEffect } from "react";
 import { MonitorPage, AdminUsers } from "../events/pages/MonitorPage";
+import { SwaggerAuth} from "../auth/pages/swagger"
+import api from "../api/api.js";
+
 
 export const AppRouter = () => {
 
@@ -32,7 +35,6 @@ export const AppRouter = () => {
                     <>
                         <Route path="/login" element={<LoginPage register={false} />} />
                         <Route path="/register" element={<LoginPage register />} />
-                        <Route path="/swagger-auth.json" element={<Navigate to={"/swagger-auth.json"} />} />
                         <Route path="/*" element={<Navigate to={"/login"} />} />
                     </>
                 ) : (
