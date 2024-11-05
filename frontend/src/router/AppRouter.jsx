@@ -32,7 +32,6 @@ export const AppRouter = () => {
                     <>
                         <Route path="/login" element={<LoginPage register={false} />} />
                         <Route path="/register" element={<LoginPage register />} />
-                        <Route path="/swagger-auth.json" element={<Navigate to={"/swagger-auth.json"} />} />
                         <Route path="/*" element={<Navigate to={"/login"} />} />
                     </>
                 ) : (

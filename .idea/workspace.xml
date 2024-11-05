@@ -4,26 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e8a0b3a-6909-4781-9a29-07d51606ca37" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/grupo/tacs/Router.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/grupo/tacs/Router.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/grupo/tacs/controllers/EventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/grupo/tacs/controllers/EventController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/grupo/tacs/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/grupo/tacs/controllers/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/grupo/tacs/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/grupo/tacs/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/grupo/tacs/model/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/grupo/tacs/model/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/grupo/tacs/repos/EventRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/grupo/tacs/repos/EventRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/grupo/tacs/repos/InteractionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/grupo/tacs/repos/InteractionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/grupo/tacs/repos/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/grupo/tacs/repos/Repository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/grupo/tacs/repos/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/org/grupo/tacs/repos/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/test/java/org/grupo/tacs/EventTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/test/java/org/grupo/tacs/EventTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/events/components/CreateEvent/CreateEventForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/events/components/CreateEvent/CreateEventForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/events/components/CreateEvent/CreateEventModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/events/components/CreateEvent/CreateEventModal.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/events/pages/EventsPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/events/pages/EventsPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/hooks/useEventsStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/hooks/useEventsStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/hooks/useUiStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/hooks/useUiStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store/ui/uiSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/ui/uiSlice.js" afterDir="false" />
-    </list>
+    <list default="true" id="3e8a0b3a-6909-4781-9a29-07d51606ca37" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,18 +13,18 @@
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JSX File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
@@ -110,6 +91,8 @@
       <workItem from="1729292124874" duration="662000" />
       <workItem from="1729524257467" duration="8000" />
       <workItem from="1730060662521" duration="1996000" />
+      <workItem from="1730210414785" duration="457000" />
+      <workItem from="1730574008845" duration="6373000" />
     </task>
     <servers />
   </component>
