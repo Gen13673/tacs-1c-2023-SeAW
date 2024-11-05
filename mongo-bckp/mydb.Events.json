@@ -1,0 +1,227 @@
+[{
+  "_id": {
+    "$oid": "672a780ad848fb0b488fe278"
+  },
+  "createdBy": {
+    "$oid": "671d05b74a584341a8e62eea"
+  },
+  "createdDate": {
+    "$date": "2024-11-05T16:54:50.477Z"
+  },
+  "desc": "Mi Cumple!",
+  "isActive": true,
+  "isCommunity": true,
+  "name": "Cumpleaños",
+  "options": [
+    {
+      "end": {
+        "$date": "2024-11-13T23:00:00.000Z"
+      },
+      "start": {
+        "$date": "2024-11-13T17:00:00.000Z"
+      },
+      "votes": []
+    }
+  ],
+  "participants": [
+    {
+      "_id": {
+        "$oid": "671d05b74a584341a8e62eea"
+      },
+      "confirmPassword": "3b317c2d32ca936c1adc86c0f34e4156e1ed9490",
+      "createdDate": {
+        "$date": "2024-10-26T15:07:35.240Z"
+      },
+      "email": "lucas.sanchez@hotmail.com",
+      "lastName": "Sanchez",
+      "name": "Lucas",
+      "password": "3b317c2d32ca936c1adc86c0f34e4156e1ed9490"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "672a789cd848fb0b488fe280"
+  },
+  "createdBy": {
+    "$oid": "671d05cc4a584341a8e62eeb"
+  },
+  "createdDate": {
+    "$date": "2024-11-05T16:57:16.584Z"
+  },
+  "desc": "Reunión de la escuela",
+  "isActive": true,
+  "isCommunity": true,
+  "name": "Egresados 2018",
+  "options": [
+    {
+      "end": {
+        "$date": "2024-11-09T22:00:00.000Z"
+      },
+      "start": {
+        "$date": "2024-11-09T12:00:00.000Z"
+      },
+      "votes": [
+        {
+          "userId": {
+            "$oid": "671d06914a584341a8e62ef0"
+          },
+          "votingDateDate": {
+            "$date": "2024-11-05T19:58:22.603Z"
+          }
+        },
+        {
+          "userId": {
+            "$oid": "671d06a94a584341a8e62ef1"
+          },
+          "votingDateDate": {
+            "$date": "2024-11-05T19:58:55.198Z"
+          }
+        }
+      ]
+    }
+  ],
+  "participants": [
+    {
+      "_id": {
+        "$oid": "671d05cc4a584341a8e62eeb"
+      },
+      "confirmPassword": "85d07cbb7fd465725e0d62f028ba94425f5a6748",
+      "createdDate": {
+        "$date": "2024-10-26T15:07:56.350Z"
+      },
+      "email": "aadaniel@gmail.com",
+      "lastName": "Arenas",
+      "name": "Alan",
+      "password": "85d07cbb7fd465725e0d62f028ba94425f5a6748"
+    },
+    {
+      "_id": {
+        "$oid": "671d06914a584341a8e62ef0"
+      },
+      "confirmPassword": "15c306802b68c4444b97543cc2a8cd153cbc2554",
+      "createdDate": {
+        "$date": "2024-10-26T15:11:13.518Z"
+      },
+      "email": "mika.walters@aol.com",
+      "lastName": "Galan",
+      "name": "Micaela",
+      "password": "15c306802b68c4444b97543cc2a8cd153cbc2554"
+    },
+    {
+      "_id": {
+        "$oid": "671d06a94a584341a8e62ef1"
+      },
+      "confirmPassword": "a76cf0e161e8875311f396ed359c5950b79ba496",
+      "createdDate": {
+        "$date": "2024-10-26T15:11:37.518Z"
+      },
+      "email": "juan_li00@googlemail.com",
+      "lastName": "Herrera",
+      "name": "Juan",
+      "password": "a76cf0e161e8875311f396ed359c5950b79ba496"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "672a7932d848fb0b488fe292"
+  },
+  "createdBy": {
+    "$oid": "671d06a94a584341a8e62ef1"
+  },
+  "createdDate": {
+    "$date": "2024-11-05T16:59:46.732Z"
+  },
+  "desc": "probando123",
+  "isActive": true,
+  "isCommunity": true,
+  "name": "Test",
+  "options": [
+    {
+      "end": {
+        "$date": "2024-11-12T17:30:00.000Z"
+      },
+      "start": {
+        "$date": "2024-11-12T17:00:00.000Z"
+      },
+      "votes": []
+    },
+    {
+      "end": {
+        "$date": "2024-11-19T17:30:00.000Z"
+      },
+      "start": {
+        "$date": "2024-11-19T17:00:00.000Z"
+      },
+      "votes": []
+    }
+  ],
+  "participants": [
+    {
+      "_id": {
+        "$oid": "671d06a94a584341a8e62ef1"
+      },
+      "confirmPassword": "a76cf0e161e8875311f396ed359c5950b79ba496",
+      "createdDate": {
+        "$date": "2024-10-26T15:11:37.518Z"
+      },
+      "email": "juan_li00@googlemail.com",
+      "lastName": "Herrera",
+      "name": "Juan",
+      "password": "a76cf0e161e8875311f396ed359c5950b79ba496"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "672a7a41d848fb0b488fe298"
+  },
+  "createdBy": {
+    "$oid": "671d06344a584341a8e62eef"
+  },
+  "createdDate": {
+    "$date": "2024-11-05T17:04:17.664Z"
+  },
+  "desc": "Seguridad Web",
+  "isActive": true,
+  "isCommunity": true,
+  "name": "Demo",
+  "options": [
+    {
+      "end": {
+        "$date": "2024-11-14T21:00:00.000Z"
+      },
+      "start": {
+        "$date": "2024-11-14T19:00:00.000Z"
+      },
+      "votes": [
+        {
+          "userId": {
+            "$oid": "671d06344a584341a8e62eef"
+          },
+          "votingDateDate": {
+            "$date": "2024-11-05T20:04:20.816Z"
+          }
+        }
+      ]
+    }
+  ],
+  "participants": [
+    {
+      "_id": {
+        "$oid": "671d06344a584341a8e62eef"
+      },
+      "admin": true,
+      "confirmPassword": "a40d455e4271e8db286ef18b676ff3695d623752",
+      "createdDate": {
+        "$date": "2024-10-26T15:09:40.502Z"
+      },
+      "email": "joaquin@frba.utn.edu.ar",
+      "isAdmin": true,
+      "lastName": "Rodriguez",
+      "name": "Joaquin",
+      "password": "a40d455e4271e8db286ef18b676ff3695d623752"
+    }
+  ]
+}]

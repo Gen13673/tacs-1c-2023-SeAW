@@ -1,0 +1,2 @@
+mongoimport --username=admin --password=password --host=mongodb --authenticationDatabase=admin --db=mydb --collection=Users --type=json --file=/mydb.Users.json --jsonArray
+mongoimport --username=admin --password=password --host=mongodb --authenticationDatabase=admin --db=mydb --collection=Events --type=json --file=/mydb.Events.json --jsonArray
