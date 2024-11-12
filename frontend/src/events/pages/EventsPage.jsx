@@ -63,8 +63,6 @@ export const EventsPage = () => {
                 </div>
             </main>
 
-            <Footer />
-
             <CreateEventModal isAdmin={ user.isAdmin }/>
         </>
     )

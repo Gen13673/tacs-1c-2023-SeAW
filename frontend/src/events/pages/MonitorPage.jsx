@@ -79,7 +79,6 @@ export const MonitorPage = () => {
                     </div>
                 </div>
             </div>
-            <Footer />
         </>
     )
 }
@@ -118,7 +117,6 @@ export const AdminUsers = () => {
                     ))}
                 </ul>
                 </div>
-            <Footer />
         </>
     );
 };

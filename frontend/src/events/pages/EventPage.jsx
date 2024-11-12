@@ -23,7 +23,6 @@ export const EventPage = () => {
             <div className="container" style={{paddingTop:'70px'}}>
                 <Event event={ currentEvent } />
             </div>
-            <Footer />
         </>
     )
 }
